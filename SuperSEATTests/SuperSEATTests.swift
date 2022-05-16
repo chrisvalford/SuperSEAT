@@ -33,4 +33,10 @@ class SuperSEATTests: XCTestCase {
         }
     }
 
+    func testMD5() throws {
+        let HASHED = "5D41402ABC4B2A76B9719D911017C592"
+        let s = "hello"
+        let md5_1 = s.md5
+        XCTAssert(md5_1.uppercased() == HASHED)
+    }
 }
