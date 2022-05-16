@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2FFB014C2832DB3C006E196C /* SuperSEATApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB014B2832DB3C006E196C /* SuperSEATApp.swift */; };
+		2FFB014E2832DB3C006E196C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB014D2832DB3C006E196C /* ContentView.swift */; };
+		2FFB01502832DB3D006E196C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FFB014F2832DB3D006E196C /* Assets.xcassets */; };
+		2FFB01532832DB3D006E196C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FFB01522832DB3D006E196C /* Preview Assets.xcassets */; };
+		2FFB01552832DB3D006E196C /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB01542832DB3D006E196C /* Persistence.swift */; };
+		2FFB01582832DB3D006E196C /* SuperSEAT.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB01562832DB3D006E196C /* SuperSEAT.xcdatamodeld */; };
+		2FFB01622832DB3D006E196C /* SuperSEATTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB01612832DB3D006E196C /* SuperSEATTests.swift */; };
+		2FFB016C2832DB3D006E196C /* SuperSEATUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB016B2832DB3D006E196C /* SuperSEATUITests.swift */; };
+		2FFB016E2832DB3D006E196C /* SuperSEATUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB016D2832DB3D006E196C /* SuperSEATUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2FFB015E2832DB3D006E196C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FFB01402832DB3C006E196C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2FFB01472832DB3C006E196C;
+			remoteInfo = SuperSEAT;
+		};
+		2FFB01682832DB3D006E196C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FFB01402832DB3C006E196C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2FFB01472832DB3C006E196C;
+			remoteInfo = SuperSEAT;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2FFB01482832DB3C006E196C /* SuperSEAT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperSEAT.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FFB014B2832DB3C006E196C /* SuperSEATApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperSEATApp.swift; sourceTree = "<group>"; };
+		2FFB014D2832DB3C006E196C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2FFB014F2832DB3D006E196C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2FFB01522832DB3D006E196C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2FFB01542832DB3D006E196C /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		2FFB01572832DB3D006E196C /* SuperSEAT.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SuperSEAT.xcdatamodel; sourceTree = "<group>"; };
+		2FFB015D2832DB3D006E196C /* SuperSEATTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuperSEATTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FFB01612832DB3D006E196C /* SuperSEATTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperSEATTests.swift; sourceTree = "<group>"; };
+		2FFB01672832DB3D006E196C /* SuperSEATUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuperSEATUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FFB016B2832DB3D006E196C /* SuperSEATUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperSEATUITests.swift; sourceTree = "<group>"; };
+		2FFB016D2832DB3D006E196C /* SuperSEATUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperSEATUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2FFB01452832DB3C006E196C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FFB015A2832DB3D006E196C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FFB01642832DB3D006E196C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2FFB013F2832DB3C006E196C = {
+			isa = PBXGroup;
+			children = (
+				2FFB014A2832DB3C006E196C /* SuperSEAT */,
+				2FFB01602832DB3D006E196C /* SuperSEATTests */,
+				2FFB016A2832DB3D006E196C /* SuperSEATUITests */,
+				2FFB01492832DB3C006E196C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2FFB01492832DB3C006E196C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2FFB01482832DB3C006E196C /* SuperSEAT.app */,
+				2FFB015D2832DB3D006E196C /* SuperSEATTests.xctest */,
+				2FFB01672832DB3D006E196C /* SuperSEATUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2FFB014A2832DB3C006E196C /* SuperSEAT */ = {
+			isa = PBXGroup;
+			children = (
+				2FFB014B2832DB3C006E196C /* SuperSEATApp.swift */,
+				2FFB014D2832DB3C006E196C /* ContentView.swift */,
+				2FFB014F2832DB3D006E196C /* Assets.xcassets */,
+				2FFB01542832DB3D006E196C /* Persistence.swift */,
+				2FFB01562832DB3D006E196C /* SuperSEAT.xcdatamodeld */,
+				2FFB01512832DB3D006E196C /* Preview Content */,
+			);
+			path = SuperSEAT;
+			sourceTree = "<group>";
+		};
+		2FFB01512832DB3D006E196C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2FFB01522832DB3D006E196C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2FFB01602832DB3D006E196C /* SuperSEATTests */ = {
+			isa = PBXGroup;
+			children = (
+				2FFB01612832DB3D006E196C /* SuperSEATTests.swift */,
+			);
+			path = SuperSEATTests;
+			sourceTree = "<group>";
+		};
+		2FFB016A2832DB3D006E196C /* SuperSEATUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2FFB016B2832DB3D006E196C /* SuperSEATUITests.swift */,
+				2FFB016D2832DB3D006E196C /* SuperSEATUITestsLaunchTests.swift */,
+			);
+			path = SuperSEATUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2FFB01472832DB3C006E196C /* SuperSEAT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FFB01712832DB3D006E196C /* Build configuration list for PBXNativeTarget "SuperSEAT" */;
+			buildPhases = (
+				2FFB01442832DB3C006E196C /* Sources */,
+				2FFB01452832DB3C006E196C /* Frameworks */,
+				2FFB01462832DB3C006E196C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SuperSEAT;
+			productName = SuperSEAT;
+			productReference = 2FFB01482832DB3C006E196C /* SuperSEAT.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2FFB015C2832DB3D006E196C /* SuperSEATTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FFB01742832DB3D006E196C /* Build configuration list for PBXNativeTarget "SuperSEATTests" */;
+			buildPhases = (
+				2FFB01592832DB3D006E196C /* Sources */,
+				2FFB015A2832DB3D006E196C /* Frameworks */,
+				2FFB015B2832DB3D006E196C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2FFB015F2832DB3D006E196C /* PBXTargetDependency */,
+			);
+			name = SuperSEATTests;
+			productName = SuperSEATTests;
+			productReference = 2FFB015D2832DB3D006E196C /* SuperSEATTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2FFB01662832DB3D006E196C /* SuperSEATUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FFB01772832DB3D006E196C /* Build configuration list for PBXNativeTarget "SuperSEATUITests" */;
+			buildPhases = (
+				2FFB01632832DB3D006E196C /* Sources */,
+				2FFB01642832DB3D006E196C /* Frameworks */,
+				2FFB01652832DB3D006E196C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2FFB01692832DB3D006E196C /* PBXTargetDependency */,
+			);
+			name = SuperSEATUITests;
+			productName = SuperSEATUITests;
+			productReference = 2FFB01672832DB3D006E196C /* SuperSEATUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2FFB01402832DB3C006E196C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					2FFB01472832DB3C006E196C = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					2FFB015C2832DB3D006E196C = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 2FFB01472832DB3C006E196C;
+					};
+					2FFB01662832DB3D006E196C = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 2FFB01472832DB3C006E196C;
+					};
+				};
+			};
+			buildConfigurationList = 2FFB01432832DB3C006E196C /* Build configuration list for PBXProject "SuperSEAT" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2FFB013F2832DB3C006E196C;
+			productRefGroup = 2FFB01492832DB3C006E196C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2FFB01472832DB3C006E196C /* SuperSEAT */,
+				2FFB015C2832DB3D006E196C /* SuperSEATTests */,
+				2FFB01662832DB3D006E196C /* SuperSEATUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2FFB01462832DB3C006E196C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FFB01532832DB3D006E196C /* Preview Assets.xcassets in Resources */,
+				2FFB01502832DB3D006E196C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FFB015B2832DB3D006E196C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FFB01652832DB3D006E196C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2FFB01442832DB3C006E196C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FFB01552832DB3D006E196C /* Persistence.swift in Sources */,
+				2FFB014E2832DB3C006E196C /* ContentView.swift in Sources */,
+				2FFB01582832DB3D006E196C /* SuperSEAT.xcdatamodeld in Sources */,
+				2FFB014C2832DB3C006E196C /* SuperSEATApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FFB01592832DB3D006E196C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FFB01622832DB3D006E196C /* SuperSEATTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FFB01632832DB3D006E196C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FFB016C2832DB3D006E196C /* SuperSEATUITests.swift in Sources */,
+				2FFB016E2832DB3D006E196C /* SuperSEATUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2FFB015F2832DB3D006E196C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2FFB01472832DB3C006E196C /* SuperSEAT */;
+			targetProxy = 2FFB015E2832DB3D006E196C /* PBXContainerItemProxy */;
+		};
+		2FFB01692832DB3D006E196C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2FFB01472832DB3C006E196C /* SuperSEAT */;
+			targetProxy = 2FFB01682832DB3D006E196C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2FFB016F2832DB3D006E196C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2FFB01702832DB3D006E196C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2FFB01722832DB3D006E196C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SuperSEAT/Preview Content\"";
+				DEVELOPMENT_TEAM = 3G54NEN3F6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = digital.marine.SuperSEAT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2FFB01732832DB3D006E196C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SuperSEAT/Preview Content\"";
+				DEVELOPMENT_TEAM = 3G54NEN3F6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = digital.marine.SuperSEAT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2FFB01752832DB3D006E196C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3G54NEN3F6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = digital.marine.SuperSEATTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SuperSEAT.app/SuperSEAT";
+			};
+			name = Debug;
+		};
+		2FFB01762832DB3D006E196C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3G54NEN3F6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = digital.marine.SuperSEATTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SuperSEAT.app/SuperSEAT";
+			};
+			name = Release;
+		};
+		2FFB01782832DB3D006E196C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3G54NEN3F6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = digital.marine.SuperSEATUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SuperSEAT;
+			};
+			name = Debug;
+		};
+		2FFB01792832DB3D006E196C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3G54NEN3F6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = digital.marine.SuperSEATUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SuperSEAT;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2FFB01432832DB3C006E196C /* Build configuration list for PBXProject "SuperSEAT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FFB016F2832DB3D006E196C /* Debug */,
+				2FFB01702832DB3D006E196C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FFB01712832DB3D006E196C /* Build configuration list for PBXNativeTarget "SuperSEAT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FFB01722832DB3D006E196C /* Debug */,
+				2FFB01732832DB3D006E196C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FFB01742832DB3D006E196C /* Build configuration list for PBXNativeTarget "SuperSEATTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FFB01752832DB3D006E196C /* Debug */,
+				2FFB01762832DB3D006E196C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FFB01772832DB3D006E196C /* Build configuration list for PBXNativeTarget "SuperSEATUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FFB01782832DB3D006E196C /* Debug */,
+				2FFB01792832DB3D006E196C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2FFB01562832DB3D006E196C /* SuperSEAT.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2FFB01572832DB3D006E196C /* SuperSEAT.xcdatamodel */,
+			);
+			currentVersion = 2FFB01572832DB3D006E196C /* SuperSEAT.xcdatamodel */;
+			path = SuperSEAT.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2FFB01402832DB3C006E196C /* Project object */;
+}
