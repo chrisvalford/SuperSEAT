@@ -11,6 +11,7 @@ extension CharacterListView {
     @MainActor
     class Observed: ObservableObject {
         @Published var characters: [CharacterResult] = []
+        @Published var isLoading = false
         
         var characterData: Character? {
             didSet {
@@ -22,13 +23,15 @@ extension CharacterListView {
         
         var count: Int { characters.count }
         
-        func fetchCharacters() {
+        func fetchCharacters() -> Void {
+            isLoading = true
             let loader = CharacterLoader()
             Task {
                 do {
                     let url = try loader.buildUrl(startIndex: startIndex, resultLimit: pageSize)
                     characterData = try await loader.loadModel(from: url)
                     startIndex += characterData?.data?.count ?? 0
+                    isLoading = false
                 } catch {
                     print(error)
                 }
@@ -46,7 +49,7 @@ struct CharacterLoader {
     func buildUrl(startIndex: Int = 0, resultLimit: Int = 20) throws -> URL {
         let ts = UUID().uuidString
         let hash = ts.appending(secret).appending(apiKey)
-        let string = "https://gateway.marvel.com:443/v1/public/characters?limit=\(resultLimit)&apikey=\(apiKey)&ts=\(ts)&hash=\(hash.md5)"
+        let string = "https://gateway.marvel.com:443/v1/public/characters?offset=\(startIndex)&limit=\(resultLimit)&apikey=\(apiKey)&ts=\(ts)&hash=\(hash.md5)"
         guard let url = URL(string: string) else {
             throw ApiError.malformedURL
         }

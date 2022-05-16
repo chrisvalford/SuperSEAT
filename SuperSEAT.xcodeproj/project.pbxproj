@@ -52,6 +52,8 @@
 		2FFB01B42832E061006E196C /* CharacterListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB01B32832E061006E196C /* CharacterListRow.swift */; };
 		2FFB01B62832E1C4006E196C /* CharacterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB01B52832E1C4006E196C /* CharacterDetailView.swift */; };
 		2FFB01B82832E2A7006E196C /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB01B72832E2A7006E196C /* Enums.swift */; };
+		2FFB01BB2832F692006E196C /* InfiniteList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB01BA2832F692006E196C /* InfiniteList.swift */; };
+		2FFB01BC2832F775006E196C /* InfiniteList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB01BA2832F692006E196C /* InfiniteList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +108,7 @@
 		2FFB01B52832E1C4006E196C /* CharacterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailView.swift; sourceTree = "<group>"; };
 		2FFB01B72832E2A7006E196C /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		2FFB01B92832E3E7006E196C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		2FFB01BA2832F692006E196C /* InfiniteList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				2FFB01862832DD90006E196C /* Character */,
+				2FFB01BA2832F692006E196C /* InfiniteList.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -405,6 +409,7 @@
 				2FFB01AA2832DD90006E196C /* CharacterResult.swift in Sources */,
 				2FFB01A62832DD90006E196C /* CharacterSeries.swift in Sources */,
 				2FFB01B62832E1C4006E196C /* CharacterDetailView.swift in Sources */,
+				2FFB01BB2832F692006E196C /* InfiniteList.swift in Sources */,
 				2FFB01822832DD81006E196C /* URLSession+DataFromDelegate.swift in Sources */,
 				2FFB014C2832DB3C006E196C /* SuperSEATApp.swift in Sources */,
 				2FFB019A2832DD90006E196C /* Character.swift in Sources */,
@@ -426,6 +431,7 @@
 				2FFB01852832DD81006E196C /* String+MD5.swift in Sources */,
 				2FFB01622832DB3D006E196C /* SuperSEATTests.swift in Sources */,
 				2FFB019B2832DD90006E196C /* Character.swift in Sources */,
+				2FFB01BC2832F775006E196C /* InfiniteList.swift in Sources */,
 				2FFB01A32832DD90006E196C /* SeriesItem.swift in Sources */,
 				2FFB01AD2832DD90006E196C /* ComicItem.swift in Sources */,
 				2FFB01A72832DD90006E196C /* CharacterSeries.swift in Sources */,

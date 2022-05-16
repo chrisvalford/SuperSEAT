@@ -12,17 +12,22 @@ struct CharacterListView: View {
     
     var body: some View {
         NavigationView {
-            List(observed.characters) { character in
+            InfiniteList(data: $observed.characters,
+                         isLoading: $observed.isLoading,
+                         loadMore: observed.fetchCharacters) { character in
                 NavigationLink {
                     CharacterDetailView()
+                        .onAppear {
+                            if character == observed.characters.last {
+                                print("Load more")
+                                observed.fetchCharacters()
+                            }
+                        }
                 } label: {
                     CharacterListRow(character: character)
                 }
             }
             .navigationTitle("Heros")
-            .onAppear {
-                observed.fetchCharacters()
-            }
         }
     }
 }

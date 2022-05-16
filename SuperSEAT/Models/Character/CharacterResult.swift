@@ -51,3 +51,15 @@ public struct CharacterResult: Codable, Identifiable {
         series = try container.decodeIfPresent(CharacterSeries.self, forKey: .series)
     }
 }
+
+extension CharacterResult: Equatable {
+    public static func == (lhs: CharacterResult, rhs: CharacterResult) -> Bool {
+        return lhs.id == rhs.id
+    }
+}
+
+extension CharacterResult: Hashable {
+    public func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
+}
