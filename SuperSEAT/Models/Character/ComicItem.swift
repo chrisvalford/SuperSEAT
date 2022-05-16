@@ -8,6 +8,6 @@
 import Foundation
 
 public struct ComicItem: Codable {
-    let resourceURI: String?
-    let name: String?
+    public let resourceURI: String?
+    public let name: String?
 }

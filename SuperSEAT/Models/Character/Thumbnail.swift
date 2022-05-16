@@ -8,6 +8,6 @@
 import Foundation
 
 public struct Thumbnail: Codable {
-    let path: String?
-    let `extension`: String?
+    public let path: String?
+    public let `extension`: String?
 }

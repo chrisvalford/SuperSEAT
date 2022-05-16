@@ -47,6 +47,11 @@
 		2FFB01AB2832DD90006E196C /* CharacterResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB01922832DD90006E196C /* CharacterResult.swift */; };
 		2FFB01AC2832DD90006E196C /* ComicItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB01932832DD90006E196C /* ComicItem.swift */; };
 		2FFB01AD2832DD90006E196C /* ComicItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB01932832DD90006E196C /* ComicItem.swift */; };
+		2FFB01B02832DFA6006E196C /* CharacterListView+Observed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB01AF2832DFA6006E196C /* CharacterListView+Observed.swift */; };
+		2FFB01B22832DFB9006E196C /* CharacterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB01B12832DFB9006E196C /* CharacterListView.swift */; };
+		2FFB01B42832E061006E196C /* CharacterListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB01B32832E061006E196C /* CharacterListRow.swift */; };
+		2FFB01B62832E1C4006E196C /* CharacterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB01B52832E1C4006E196C /* CharacterDetailView.swift */; };
+		2FFB01B82832E2A7006E196C /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB01B72832E2A7006E196C /* Enums.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +100,12 @@
 		2FFB01912832DD90006E196C /* CharacterStories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterStories.swift; sourceTree = "<group>"; };
 		2FFB01922832DD90006E196C /* CharacterResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterResult.swift; sourceTree = "<group>"; };
 		2FFB01932832DD90006E196C /* ComicItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComicItem.swift; sourceTree = "<group>"; };
+		2FFB01AF2832DFA6006E196C /* CharacterListView+Observed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CharacterListView+Observed.swift"; sourceTree = "<group>"; };
+		2FFB01B12832DFB9006E196C /* CharacterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListView.swift; sourceTree = "<group>"; };
+		2FFB01B32832E061006E196C /* CharacterListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListRow.swift; sourceTree = "<group>"; };
+		2FFB01B52832E1C4006E196C /* CharacterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailView.swift; sourceTree = "<group>"; };
+		2FFB01B72832E2A7006E196C /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		2FFB01B92832E3E7006E196C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +157,7 @@
 		2FFB014A2832DB3C006E196C /* SuperSEAT */ = {
 			isa = PBXGroup;
 			children = (
+				2FFB01B92832E3E7006E196C /* Info.plist */,
 				2FFB017D2832DBD8006E196C /* API */,
 				2FFB017C2832DBB0006E196C /* Extensions */,
 				2FFB017A2832DB48006E196C /* Models */,
@@ -187,6 +199,7 @@
 		2FFB017A2832DB48006E196C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				2FFB01862832DD90006E196C /* Character */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -194,6 +207,7 @@
 		2FFB017B2832DB94006E196C /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				2FFB01AE2832DF8B006E196C /* Character */,
 				2FFB014D2832DB3C006E196C /* ContentView.swift */,
 			);
 			path = Scenes;
@@ -211,7 +225,7 @@
 		2FFB017D2832DBD8006E196C /* API */ = {
 			isa = PBXGroup;
 			children = (
-				2FFB01862832DD90006E196C /* Character */,
+				2FFB01B72832E2A7006E196C /* Enums.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -219,19 +233,30 @@
 		2FFB01862832DD90006E196C /* Character */ = {
 			isa = PBXGroup;
 			children = (
-				2FFB01872832DD90006E196C /* Thumbnail.swift */,
+				2FFB018A2832DD90006E196C /* Character.swift */,
 				2FFB01882832DD90006E196C /* CharacterComics.swift */,
 				2FFB01892832DD90006E196C /* CharacterData.swift */,
-				2FFB018A2832DD90006E196C /* Character.swift */,
-				2FFB018B2832DD90006E196C /* EventItem.swift */,
 				2FFB018C2832DD90006E196C /* CharacterEvent.swift */,
-				2FFB018D2832DD90006E196C /* StoryItem.swift */,
-				2FFB018E2832DD90006E196C /* SeriesItem.swift */,
-				2FFB018F2832DD90006E196C /* ResultUrl.swift */,
+				2FFB01922832DD90006E196C /* CharacterResult.swift */,
 				2FFB01902832DD90006E196C /* CharacterSeries.swift */,
 				2FFB01912832DD90006E196C /* CharacterStories.swift */,
-				2FFB01922832DD90006E196C /* CharacterResult.swift */,
 				2FFB01932832DD90006E196C /* ComicItem.swift */,
+				2FFB018B2832DD90006E196C /* EventItem.swift */,
+				2FFB018F2832DD90006E196C /* ResultUrl.swift */,
+				2FFB018E2832DD90006E196C /* SeriesItem.swift */,
+				2FFB018D2832DD90006E196C /* StoryItem.swift */,
+				2FFB01872832DD90006E196C /* Thumbnail.swift */,
+			);
+			path = Character;
+			sourceTree = "<group>";
+		};
+		2FFB01AE2832DF8B006E196C /* Character */ = {
+			isa = PBXGroup;
+			children = (
+				2FFB01AF2832DFA6006E196C /* CharacterListView+Observed.swift */,
+				2FFB01B12832DFB9006E196C /* CharacterListView.swift */,
+				2FFB01B32832E061006E196C /* CharacterListRow.swift */,
+				2FFB01B52832E1C4006E196C /* CharacterDetailView.swift */,
 			);
 			path = Character;
 			sourceTree = "<group>";
@@ -375,16 +400,21 @@
 				2FFB01582832DB3D006E196C /* SuperSEAT.xcdatamodeld in Sources */,
 				2FFB01962832DD90006E196C /* CharacterComics.swift in Sources */,
 				2FFB01842832DD81006E196C /* String+MD5.swift in Sources */,
+				2FFB01B02832DFA6006E196C /* CharacterListView+Observed.swift in Sources */,
+				2FFB01B22832DFB9006E196C /* CharacterListView.swift in Sources */,
 				2FFB01AA2832DD90006E196C /* CharacterResult.swift in Sources */,
 				2FFB01A62832DD90006E196C /* CharacterSeries.swift in Sources */,
+				2FFB01B62832E1C4006E196C /* CharacterDetailView.swift in Sources */,
 				2FFB01822832DD81006E196C /* URLSession+DataFromDelegate.swift in Sources */,
 				2FFB014C2832DB3C006E196C /* SuperSEATApp.swift in Sources */,
 				2FFB019A2832DD90006E196C /* Character.swift in Sources */,
 				2FFB01942832DD90006E196C /* Thumbnail.swift in Sources */,
+				2FFB01B42832E061006E196C /* CharacterListRow.swift in Sources */,
 				2FFB01982832DD90006E196C /* CharacterData.swift in Sources */,
 				2FFB01AC2832DD90006E196C /* ComicItem.swift in Sources */,
 				2FFB01A82832DD90006E196C /* CharacterStories.swift in Sources */,
 				2FFB019E2832DD90006E196C /* CharacterEvent.swift in Sources */,
+				2FFB01B82832E2A7006E196C /* Enums.swift in Sources */,
 				2FFB019C2832DD90006E196C /* EventItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -562,6 +592,7 @@
 				DEVELOPMENT_TEAM = 3G54NEN3F6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SuperSEAT/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -592,6 +623,7 @@
 				DEVELOPMENT_TEAM = 3G54NEN3F6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SuperSEAT/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -8,6 +8,6 @@
 import Foundation
 
 public struct ResultUrl: Codable {
-    let type: String?
-    let url: String?
+    public let type: String?
+    public let url: String?
 }
