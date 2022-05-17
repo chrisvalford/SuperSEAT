@@ -7,7 +7,8 @@
 
 import Foundation
 
-public struct EventItem: Codable {
-    public let resourceURI: String?
-    public let name: String?
+public struct EventItem: Codable , Identifiable {
+    public var id: String { return resourceURI }
+    public let resourceURI: String
+    public let name: String
 }

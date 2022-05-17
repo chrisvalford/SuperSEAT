@@ -7,7 +7,8 @@
 
 import Foundation
 
-public struct ResultUrl: Codable {
-    public let type: String?
-    public let url: String?
+public struct ResultUrl: Codable, Identifiable {
+    public var id: String { url }
+    public let type: String
+    public let url: String
 }

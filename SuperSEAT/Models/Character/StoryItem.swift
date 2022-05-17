@@ -7,8 +7,9 @@
 
 import Foundation
 
-public struct StoryItem: Codable {
-    public let resourceURI: String?
-    public let name: String?
-    public let type: String?
+public struct StoryItem: Codable , Identifiable {
+    public var id: String { return resourceURI }
+    public let resourceURI: String
+    public let name: String
+    public let type: String
 }

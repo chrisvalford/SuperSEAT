@@ -63,6 +63,9 @@
 		2FFB01D128338728006E196C /* Constants and Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB01B72832E2A7006E196C /* Constants and Enums.swift */; };
 		2FFB01D22833872A006E196C /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB01CB283383FB006E196C /* Credentials.swift */; };
 		2FFB01D32833874B006E196C /* CharacterListView+Observed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB01AF2832DFA6006E196C /* CharacterListView+Observed.swift */; };
+		2FFB01D528338954006E196C /* CharacterDetailView+Observed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB01D428338954006E196C /* CharacterDetailView+Observed.swift */; };
+		2FFB01D928338F8C006E196C /* CharacterDetailView+Observed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB01D428338954006E196C /* CharacterDetailView+Observed.swift */; };
+		2FFB01DB28339533006E196C /* CharacterDetailLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB01DA28339533006E196C /* CharacterDetailLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +123,8 @@
 		2FFB01BA2832F692006E196C /* InfiniteList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteList.swift; sourceTree = "<group>"; };
 		2FFB01CB283383FB006E196C /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
 		2FFB01CE28338699006E196C /* CharacterLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterLoader.swift; sourceTree = "<group>"; };
+		2FFB01D428338954006E196C /* CharacterDetailView+Observed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CharacterDetailView+Observed.swift"; sourceTree = "<group>"; };
+		2FFB01DA28339533006E196C /* CharacterDetailLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,6 +246,7 @@
 			isa = PBXGroup;
 			children = (
 				2FFB01CE28338699006E196C /* CharacterLoader.swift */,
+				2FFB01DA28339533006E196C /* CharacterDetailLoader.swift */,
 				2FFB01B72832E2A7006E196C /* Constants and Enums.swift */,
 				2FFB01CB283383FB006E196C /* Credentials.swift */,
 			);
@@ -270,10 +276,8 @@
 		2FFB01AE2832DF8B006E196C /* Character */ = {
 			isa = PBXGroup;
 			children = (
-				2FFB01AF2832DFA6006E196C /* CharacterListView+Observed.swift */,
-				2FFB01B12832DFB9006E196C /* CharacterListView.swift */,
-				2FFB01B32832E061006E196C /* CharacterListRow.swift */,
-				2FFB01B52832E1C4006E196C /* CharacterDetailView.swift */,
+				2FFB01D628338965006E196C /* List */,
+				2FFB01D728338970006E196C /* Detail */,
 			);
 			path = Character;
 			sourceTree = "<group>";
@@ -285,6 +289,25 @@
 				2FFB01562832DB3D006E196C /* SuperSEAT.xcdatamodeld */,
 			);
 			path = CoreDataStack;
+			sourceTree = "<group>";
+		};
+		2FFB01D628338965006E196C /* List */ = {
+			isa = PBXGroup;
+			children = (
+				2FFB01AF2832DFA6006E196C /* CharacterListView+Observed.swift */,
+				2FFB01B12832DFB9006E196C /* CharacterListView.swift */,
+				2FFB01B32832E061006E196C /* CharacterListRow.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		2FFB01D728338970006E196C /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				2FFB01B52832E1C4006E196C /* CharacterDetailView.swift */,
+				2FFB01D428338954006E196C /* CharacterDetailView+Observed.swift */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -437,6 +460,7 @@
 				2FFB01B22832DFB9006E196C /* CharacterListView.swift in Sources */,
 				2FFB01AA2832DD90006E196C /* CharacterResult.swift in Sources */,
 				2FFB01A62832DD90006E196C /* CharacterSeries.swift in Sources */,
+				2FFB01D528338954006E196C /* CharacterDetailView+Observed.swift in Sources */,
 				2FFB01B62832E1C4006E196C /* CharacterDetailView.swift in Sources */,
 				2FFB01BB2832F692006E196C /* InfiniteList.swift in Sources */,
 				2FFB01822832DD81006E196C /* URLSession+DataFromDelegate.swift in Sources */,
@@ -448,6 +472,7 @@
 				2FFB01AC2832DD90006E196C /* ComicItem.swift in Sources */,
 				2FFB01CF28338699006E196C /* CharacterLoader.swift in Sources */,
 				2FFB01A82832DD90006E196C /* CharacterStories.swift in Sources */,
+				2FFB01DB28339533006E196C /* CharacterDetailLoader.swift in Sources */,
 				2FFB019E2832DD90006E196C /* CharacterEvent.swift in Sources */,
 				2FFB01B82832E2A7006E196C /* Constants and Enums.swift in Sources */,
 				2FFB019C2832DD90006E196C /* EventItem.swift in Sources */,
@@ -475,6 +500,7 @@
 				2FFB019F2832DD90006E196C /* CharacterEvent.swift in Sources */,
 				2FFB01D22833872A006E196C /* Credentials.swift in Sources */,
 				2FFB01952832DD90006E196C /* Thumbnail.swift in Sources */,
+				2FFB01D928338F8C006E196C /* CharacterDetailView+Observed.swift in Sources */,
 				2FFB01972832DD90006E196C /* CharacterComics.swift in Sources */,
 				2FFB01AB2832DD90006E196C /* CharacterResult.swift in Sources */,
 				2FFB01D128338728006E196C /* Constants and Enums.swift in Sources */,
