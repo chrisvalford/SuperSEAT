@@ -15,12 +15,24 @@ struct CharacterDetailView: View {
     var body: some View {
         ScrollView(.vertical) {
             VStack {
-                KFImage(URL(string: (character.thumbnail?.path ?? "") + "." + (character.thumbnail?.`extension` ?? "")))
-                    .loadDiskFileSynchronously()
-                    .fade(duration: 0.25)
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(minWidth: 200, maxWidth: .infinity, minHeight: 200)
+                ZStack {
+                    KFImage(URL(string: (character.thumbnail?.path ?? "") + "." + (character.thumbnail?.`extension` ?? "")))
+                        .loadDiskFileSynchronously()
+                        .fade(duration: 0.25)
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(minWidth: 200, maxWidth: .infinity, minHeight: 200)
+                    Button {
+                        print("Toggle favorite")
+                    } label: {
+                        Image(systemName: "hand.thumbsup.circle")
+                            .foregroundColor(.red)
+                            .background(Color.white)
+                            .font(.largeTitle)
+                            .clipShape(Circle())
+                            .position(x: 32, y: 32)
+                    }
+                }
                 Text(character.description ?? "")
                     .padding(.horizontal)
                 Spacer()
