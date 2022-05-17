@@ -7,7 +7,8 @@
 
 import Foundation
 
-public struct ComicItem: Codable {
-    public let resourceURI: String?
-    public let name: String?
+public struct ComicItem: Codable, Identifiable {
+    public var id: String { return resourceURI }
+    public let resourceURI: String
+    public let name: String
 }

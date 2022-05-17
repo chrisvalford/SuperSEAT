@@ -14,7 +14,7 @@ public struct CharacterResult: Codable, Identifiable {
     public let description: String?
     public let modified: Date?
     public let resourceURI: String?
-    public let urls: [ResultUrl?]
+    public var urls: [ResultUrl] = []
     public let thumbnail: Thumbnail?
     public let comics: CharacterComics?
     public let stories: CharacterStories?

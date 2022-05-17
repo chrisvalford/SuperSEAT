@@ -16,7 +16,7 @@ struct CharacterListView: View {
                          isLoading: $observed.isLoading,
                          loadMore: observed.fetchCharacters) { character in
                 NavigationLink {
-                    CharacterDetailView()
+                    CharacterDetailView(character: character)
                         .onAppear {
                             if character == observed.characters.last {
                                 print("Load more")
@@ -30,6 +30,7 @@ struct CharacterListView: View {
                          .padding(.horizontal, -12)
             .navigationTitle("Heros")
         }
+        .accentColor(.black)
     }
 }
 

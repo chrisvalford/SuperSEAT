@@ -11,5 +11,5 @@ public struct CharacterSeries: Codable {
     public let available: Int?
     public let returned: Int?
     public let collectionURI: String?
-    public let items: [SeriesItem?]
+    public var items: [SeriesItem] = []
 }

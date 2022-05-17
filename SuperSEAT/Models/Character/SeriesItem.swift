@@ -7,7 +7,8 @@
 
 import Foundation
 
-public struct SeriesItem: Codable {
-    public let resourceURI: String?
-    public let name: String?
+public struct SeriesItem: Codable , Identifiable {
+    public var id: String { return resourceURI }
+    public let resourceURI: String
+    public let name: String
 }

@@ -11,5 +11,5 @@ public struct CharacterEvent: Codable {
     public let available: Int?
     public let returned: Int?
     public let collectionURI: String?
-    public let items: [EventItem?]
+    public var items: [EventItem] = []
 }

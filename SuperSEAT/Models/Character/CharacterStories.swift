@@ -11,5 +11,5 @@ public struct CharacterStories: Codable {
     public let available: Int?
     public let returned: Int?
     public let collectionURI: String?
-    public let items: [StoryItem?]
+    public var items: [StoryItem] = []
 }
