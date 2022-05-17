@@ -10,7 +10,7 @@ import Foundation
 
 extension String {
     
-    var md5: String {
+    public var md5: String {
         guard let d = self.data(using: .utf8) else {
             return ""
         }

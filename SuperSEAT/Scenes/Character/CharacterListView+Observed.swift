@@ -39,28 +39,3 @@ extension CharacterListView {
         }
     }
 }
-
-struct CharacterLoader {
-    var session = URLSession.shared
-    
-    private let apiKey = "9471d911b8a72d8fa5b1b69379ba7d2a"
-    private let secret = "f90dae7a6cef0d2f00cd9392eabffc695aba2ce7"
-        
-    func buildUrl(startIndex: Int = 0, resultLimit: Int = 20) throws -> URL {
-        let ts = UUID().uuidString
-        let hash = ts.appending(secret).appending(apiKey)
-        let string = "https://gateway.marvel.com:443/v1/public/characters?offset=\(startIndex)&limit=\(resultLimit)&apikey=\(apiKey)&ts=\(ts)&hash=\(hash.md5)"
-        guard let url = URL(string: string) else {
-            throw ApiError.malformedURL
-        }
-        return url
-    }
-
-    func loadModel(from url: URL) async throws -> Character {
-        let (data, _) = try await session.data(from: url)
-        let decoder = JSONDecoder()
-        decoder.dateDecodingStrategy = .iso8601
-        let model = try decoder.decode(Character.self, from: data)
-        return model
-    }
-}

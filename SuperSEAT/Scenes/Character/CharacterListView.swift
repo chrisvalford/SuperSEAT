@@ -27,6 +27,7 @@ struct CharacterListView: View {
                     CharacterListRow(character: character)
                 }
             }
+                         .padding(.horizontal, -12)
             .navigationTitle("Heros")
         }
     }

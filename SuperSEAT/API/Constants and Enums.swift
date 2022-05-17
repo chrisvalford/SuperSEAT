@@ -9,4 +9,7 @@ import Foundation
 
 public enum ApiError: Error {
     case malformedURL
+    case notSaved
 }
+
+public let server = "https://gateway.marvel.com:443/v1/public/"

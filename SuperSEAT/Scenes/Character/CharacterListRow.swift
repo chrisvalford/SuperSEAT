@@ -5,6 +5,7 @@
 //  Created by Christopher Alford on 16/5/22.
 //
 
+import Kingfisher
 import SwiftUI
 
 struct CharacterListRow: View {
@@ -13,16 +14,11 @@ struct CharacterListRow: View {
     
     var body: some View {
         HStack {
-            if #available(iOS 15.0, *) {
-                AsyncImage(url: URL(string: (character.thumbnail?.path ?? "") + "." + (character.thumbnail?.`extension` ?? ""))){ image in
-                    image.resizable()
-                } placeholder: {
-                    ProgressView()
-                }
+                KFImage(URL(string: (character.thumbnail?.path ?? "") + "." + (character.thumbnail?.`extension` ?? "")))
+                .loadDiskFileSynchronously()
+                .fade(duration: 0.25)
+                .resizable()
                 .frame(width: 50, height: 50)
-            } else {
-                // Fallback on earlier versions
-            }
             VStack(alignment: .leading) {
                 Text(character.name ?? "")
                     .font(.headline)
