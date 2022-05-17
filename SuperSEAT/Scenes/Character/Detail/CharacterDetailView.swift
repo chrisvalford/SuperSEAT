@@ -11,7 +11,6 @@ import SwiftUI
 struct CharacterDetailView: View {
     @Environment(\.openURL) var openURL
     var character: CharacterResult
-    @State var isFavorite: Bool = false
     
     var favoriteButtonAction: ((_ id: Int) -> Void)
     
@@ -28,9 +27,8 @@ struct CharacterDetailView: View {
                     Button {
                         print("Toggle favorite")
                         favoriteButtonAction(character.marvelId)
-                        isFavorite.toggle()
                     } label: {
-                        Image(systemName: isFavorite ? "hand.thumbsup.circle" : "hand.thumbsdown.circle")
+                        Image(systemName: character.isFavorite ? "hand.thumbsup.circle" : "hand.thumbsdown.circle")
                             .foregroundColor(.red)
                             .background(Color.white)
                             .font(.largeTitle)
@@ -120,10 +118,3 @@ struct CharacterDetailView: View {
 //        CharacterDetailView()
 //    }
 //}
-
-/*
-Link(destination: URL(string: "https://www.apple.com")!) {
-    Image(systemName: "link.circle.fill")
-        .font(.largeTitle)
-}
-*/

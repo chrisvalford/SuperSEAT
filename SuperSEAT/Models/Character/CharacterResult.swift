@@ -9,6 +9,7 @@ import Foundation
 
 public struct CharacterResult: Codable, Identifiable {
     public let id: UUID
+    public var isFavorite: Bool
     public let marvelId: Int
     public let name: String?
     public let description: String?
@@ -38,6 +39,7 @@ public struct CharacterResult: Codable, Identifiable {
     public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         id = UUID()
+        isFavorite = false
         marvelId = try container.decode(Int.self, forKey: .marvelId)
         name = try container.decode(String.self, forKey: .name)
         description = try container.decode(String.self, forKey: .description)
@@ -49,6 +51,10 @@ public struct CharacterResult: Codable, Identifiable {
         stories = try container.decodeIfPresent(CharacterStories.self, forKey: .stories)
         events = try container.decodeIfPresent(CharacterEvent.self, forKey: .events)
         series = try container.decodeIfPresent(CharacterSeries.self, forKey: .series)
+    }
+    
+    public mutating func toggleFavorite() {
+        self.isFavorite.toggle()
     }
 }
 

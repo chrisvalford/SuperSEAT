@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CharacterListView: View {
-    @StateObject private var observed = Observed()
+    @ObservedObject private var observed = Observed()
     
     var body: some View {
         NavigationView {
@@ -17,7 +17,6 @@ struct CharacterListView: View {
                          loadMore: observed.fetchCharacters) { character in
                 NavigationLink {
                     CharacterDetailView(character: character,
-                                        isFavorite: observed.isFavorite(id: character.marvelId),
                                         favoriteButtonAction: { id in
                         observed.updateFavorite(id: id)
                     })
@@ -28,15 +27,11 @@ struct CharacterListView: View {
                         }
                     }
                 } label: {
-                    CharacterListRow(character: character,
-                                     isFavorite: observed.isFavorite(id: character.marvelId))
+                    CharacterListRow(character: character)
                 }
             }
                          .padding(.horizontal, -12)
                          .navigationTitle("Heros")
-        }
-        .onAppear {
-            observed.loadFavorites()
         }
         .accentColor(.black)
     }

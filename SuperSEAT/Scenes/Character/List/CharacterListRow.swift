@@ -10,7 +10,6 @@ import SwiftUI
 
 struct CharacterListRow: View {
     var character: CharacterResult
-    @State var isFavorite: Bool = false
     
     var body: some View {
         HStack {
@@ -19,7 +18,7 @@ struct CharacterListRow: View {
                 .loadDiskFileSynchronously()
                 .fade(duration: 0.25)
                 .resizable()
-                if isFavorite {
+                if character.isFavorite {
                     Image(systemName: "circle.fill")
                         .foregroundColor(.red)
                         .font(.callout)
