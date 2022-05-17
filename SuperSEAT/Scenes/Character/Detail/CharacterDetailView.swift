@@ -11,6 +11,9 @@ import SwiftUI
 struct CharacterDetailView: View {
     @Environment(\.openURL) var openURL
     var character: CharacterResult
+    @State var isFavorite: Bool = false
+    
+    var favoriteButtonAction: ((_ id: Int) -> Void)
     
     var body: some View {
         ScrollView(.vertical) {
@@ -24,8 +27,10 @@ struct CharacterDetailView: View {
                         .frame(minWidth: 200, maxWidth: .infinity, minHeight: 200)
                     Button {
                         print("Toggle favorite")
+                        favoriteButtonAction(character.marvelId)
+                        isFavorite.toggle()
                     } label: {
-                        Image(systemName: "hand.thumbsup.circle")
+                        Image(systemName: isFavorite ? "hand.thumbsup.circle" : "hand.thumbsdown.circle")
                             .foregroundColor(.red)
                             .background(Color.white)
                             .font(.largeTitle)

@@ -9,7 +9,6 @@ import Kingfisher
 import SwiftUI
 
 struct CharacterListRow: View {
-    
     var character: CharacterResult
     
     var body: some View {
