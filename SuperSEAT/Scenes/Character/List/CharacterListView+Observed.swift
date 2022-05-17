@@ -12,6 +12,7 @@ extension CharacterListView {
     class Observed: ObservableObject {
         @Published var characters: [CharacterResult] = []
         @Published var isLoading = false
+        @Published var favorites: [Int] = []
         
         var characterData: Character? {
             didSet {
@@ -36,6 +37,30 @@ extension CharacterListView {
                     print(error)
                 }
             }
+        }
+        
+        func loadFavorites() {
+            let defaults = UserDefaults.standard
+            if let favs = defaults.object(forKey:"Favorites") as? [Int] {
+                favorites = favs
+            }
+        }
+        
+        func updateFavorite(id: Int) {
+            if let index = favorites.firstIndex(of: id) {
+                favorites.remove(at: index)
+                print("Removed \(id)")
+            } else {
+                favorites.append(id)
+                print("Added \(id)")
+            }
+            let defaults = UserDefaults.standard
+            defaults.set(favorites, forKey: "Favorites")
+        }
+        
+        func isFavorite(id: Int) -> Bool {
+            let index = favorites.firstIndex(of: id)
+            return index != nil
         }
     }
 }

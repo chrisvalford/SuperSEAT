@@ -9,7 +9,6 @@ import SwiftUI
 
 struct CharacterListView: View {
     @StateObject private var observed = Observed()
-    @State var favorites: [Int] = []
     
     var body: some View {
         NavigationView {
@@ -18,9 +17,9 @@ struct CharacterListView: View {
                          loadMore: observed.fetchCharacters) { character in
                 NavigationLink {
                     CharacterDetailView(character: character,
-                                        isFavorite: (favorites.firstIndex(of: character.marvelId) != nil),
+                                        isFavorite: observed.isFavorite(id: character.marvelId),
                                         favoriteButtonAction: { id in
-                        updateFavorite(id: id)
+                        observed.updateFavorite(id: id)
                     })
                     .onAppear {
                         if character == observed.characters.last {
@@ -29,23 +28,17 @@ struct CharacterListView: View {
                         }
                     }
                 } label: {
-                    CharacterListRow(character: character)
+                    CharacterListRow(character: character,
+                                     isFavorite: observed.isFavorite(id: character.marvelId))
                 }
             }
                          .padding(.horizontal, -12)
                          .navigationTitle("Heros")
         }
-        .accentColor(.black)
-    }
-    
-    func updateFavorite(id: Int) {
-        if let index = favorites.firstIndex(of: id) {
-            favorites.remove(at: index)
-            print("Removed \(id)")
-        } else {
-            favorites.append(id)
-            print("Added \(id)")
+        .onAppear {
+            observed.loadFavorites()
         }
+        .accentColor(.black)
     }
 }
 
