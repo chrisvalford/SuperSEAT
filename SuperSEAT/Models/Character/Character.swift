@@ -13,7 +13,7 @@ public struct Character: Codable {
     public let copyright: String?
     public let attributionText: String?
     public let attributionHTML: String?
-    public let data: CharacterData?
+    public let data: CharacterData
     public let etag: String?
 }
 

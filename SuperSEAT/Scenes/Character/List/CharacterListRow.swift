@@ -9,16 +9,23 @@ import Kingfisher
 import SwiftUI
 
 struct CharacterListRow: View {
-    
     var character: CharacterResult
     
     var body: some View {
         HStack {
+            ZStack {
                 KFImage(URL(string: (character.thumbnail?.path ?? "") + "." + (character.thumbnail?.`extension` ?? "")))
                 .loadDiskFileSynchronously()
                 .fade(duration: 0.25)
                 .resizable()
-                .frame(width: 50, height: 50)
+                if character.isFavorite {
+                    Image(systemName: "circle.fill")
+                        .foregroundColor(.red)
+                        .font(.callout)
+                        .position(x: 2, y: 2)
+                }
+            }
+            .frame(width: 50, height: 50)
             VStack(alignment: .leading) {
                 Text(character.name ?? "")
                     .font(.headline)
