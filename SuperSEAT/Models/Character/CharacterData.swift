@@ -8,9 +8,9 @@
 import Foundation
 
 public struct CharacterData: Codable {
-    let offset: Int?
-    let limit: Int?
-    let total: Int?
-    let count: Int?
-    let results: [CharacterResult]
+    public let offset: Int?
+    public let limit: Int?
+    public let total: Int?
+    public let count: Int?
+    public let results: [CharacterResult]
 }

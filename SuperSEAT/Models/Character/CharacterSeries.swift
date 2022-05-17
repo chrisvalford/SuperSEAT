@@ -8,8 +8,8 @@
 import Foundation
 
 public struct CharacterSeries: Codable {
-    let available: Int?
-    let returned: Int?
-    let collectionURI: String?
-    let items: [SeriesItem?]
+    public let available: Int?
+    public let returned: Int?
+    public let collectionURI: String?
+    public let items: [SeriesItem?]
 }

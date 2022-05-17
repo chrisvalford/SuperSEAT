@@ -8,8 +8,8 @@
 import Foundation
 
 public struct CharacterComics: Codable {
-    let available: Int?
-    let returned: Int?
-    let collectionURI: String?
-    let items: [ComicItem?]
+    public let available: Int?
+    public let returned: Int?
+    public let collectionURI: String?
+    public let items: [ComicItem?]
 }

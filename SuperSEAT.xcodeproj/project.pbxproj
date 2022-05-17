@@ -47,6 +47,22 @@
 		2FFB01AB2832DD90006E196C /* CharacterResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB01922832DD90006E196C /* CharacterResult.swift */; };
 		2FFB01AC2832DD90006E196C /* ComicItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB01932832DD90006E196C /* ComicItem.swift */; };
 		2FFB01AD2832DD90006E196C /* ComicItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB01932832DD90006E196C /* ComicItem.swift */; };
+		2FFB01B02832DFA6006E196C /* CharacterListView+Observed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB01AF2832DFA6006E196C /* CharacterListView+Observed.swift */; };
+		2FFB01B22832DFB9006E196C /* CharacterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB01B12832DFB9006E196C /* CharacterListView.swift */; };
+		2FFB01B42832E061006E196C /* CharacterListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB01B32832E061006E196C /* CharacterListRow.swift */; };
+		2FFB01B62832E1C4006E196C /* CharacterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB01B52832E1C4006E196C /* CharacterDetailView.swift */; };
+		2FFB01B82832E2A7006E196C /* Constants and Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB01B72832E2A7006E196C /* Constants and Enums.swift */; };
+		2FFB01BB2832F692006E196C /* InfiniteList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB01BA2832F692006E196C /* InfiniteList.swift */; };
+		2FFB01BC2832F775006E196C /* InfiniteList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB01BA2832F692006E196C /* InfiniteList.swift */; };
+		2FFB01BE283365D6006E196C /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB01542832DB3D006E196C /* Persistence.swift */; };
+		2FFB01C228336820006E196C /* SuperSEAT.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB01562832DB3D006E196C /* SuperSEAT.xcdatamodeld */; };
+		2FFB01CA28337FFA006E196C /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 2FFB01C928337FFA006E196C /* Kingfisher */; };
+		2FFB01CC283383FB006E196C /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB01CB283383FB006E196C /* Credentials.swift */; };
+		2FFB01CF28338699006E196C /* CharacterLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB01CE28338699006E196C /* CharacterLoader.swift */; };
+		2FFB01D028338722006E196C /* CharacterLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB01CE28338699006E196C /* CharacterLoader.swift */; };
+		2FFB01D128338728006E196C /* Constants and Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB01B72832E2A7006E196C /* Constants and Enums.swift */; };
+		2FFB01D22833872A006E196C /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB01CB283383FB006E196C /* Credentials.swift */; };
+		2FFB01D32833874B006E196C /* CharacterListView+Observed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB01AF2832DFA6006E196C /* CharacterListView+Observed.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +111,15 @@
 		2FFB01912832DD90006E196C /* CharacterStories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterStories.swift; sourceTree = "<group>"; };
 		2FFB01922832DD90006E196C /* CharacterResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterResult.swift; sourceTree = "<group>"; };
 		2FFB01932832DD90006E196C /* ComicItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComicItem.swift; sourceTree = "<group>"; };
+		2FFB01AF2832DFA6006E196C /* CharacterListView+Observed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CharacterListView+Observed.swift"; sourceTree = "<group>"; };
+		2FFB01B12832DFB9006E196C /* CharacterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListView.swift; sourceTree = "<group>"; };
+		2FFB01B32832E061006E196C /* CharacterListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListRow.swift; sourceTree = "<group>"; };
+		2FFB01B52832E1C4006E196C /* CharacterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailView.swift; sourceTree = "<group>"; };
+		2FFB01B72832E2A7006E196C /* Constants and Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constants and Enums.swift"; sourceTree = "<group>"; };
+		2FFB01B92832E3E7006E196C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		2FFB01BA2832F692006E196C /* InfiniteList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteList.swift; sourceTree = "<group>"; };
+		2FFB01CB283383FB006E196C /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
+		2FFB01CE28338699006E196C /* CharacterLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +127,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FFB01CA28337FFA006E196C /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,14 +172,13 @@
 		2FFB014A2832DB3C006E196C /* SuperSEAT */ = {
 			isa = PBXGroup;
 			children = (
+				2FFB01B92832E3E7006E196C /* Info.plist */,
 				2FFB017D2832DBD8006E196C /* API */,
 				2FFB017C2832DBB0006E196C /* Extensions */,
 				2FFB017A2832DB48006E196C /* Models */,
 				2FFB017B2832DB94006E196C /* Scenes */,
 				2FFB014B2832DB3C006E196C /* SuperSEATApp.swift */,
 				2FFB014F2832DB3D006E196C /* Assets.xcassets */,
-				2FFB01542832DB3D006E196C /* Persistence.swift */,
-				2FFB01562832DB3D006E196C /* SuperSEAT.xcdatamodeld */,
 				2FFB01512832DB3D006E196C /* Preview Content */,
 			);
 			path = SuperSEAT;
@@ -187,6 +212,9 @@
 		2FFB017A2832DB48006E196C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				2FFB01BF283365E0006E196C /* CoreDataStack */,
+				2FFB01862832DD90006E196C /* Character */,
+				2FFB01BA2832F692006E196C /* InfiniteList.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -194,6 +222,7 @@
 		2FFB017B2832DB94006E196C /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				2FFB01AE2832DF8B006E196C /* Character */,
 				2FFB014D2832DB3C006E196C /* ContentView.swift */,
 			);
 			path = Scenes;
@@ -211,7 +240,9 @@
 		2FFB017D2832DBD8006E196C /* API */ = {
 			isa = PBXGroup;
 			children = (
-				2FFB01862832DD90006E196C /* Character */,
+				2FFB01CE28338699006E196C /* CharacterLoader.swift */,
+				2FFB01B72832E2A7006E196C /* Constants and Enums.swift */,
+				2FFB01CB283383FB006E196C /* Credentials.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -219,21 +250,41 @@
 		2FFB01862832DD90006E196C /* Character */ = {
 			isa = PBXGroup;
 			children = (
-				2FFB01872832DD90006E196C /* Thumbnail.swift */,
+				2FFB018A2832DD90006E196C /* Character.swift */,
 				2FFB01882832DD90006E196C /* CharacterComics.swift */,
 				2FFB01892832DD90006E196C /* CharacterData.swift */,
-				2FFB018A2832DD90006E196C /* Character.swift */,
-				2FFB018B2832DD90006E196C /* EventItem.swift */,
 				2FFB018C2832DD90006E196C /* CharacterEvent.swift */,
-				2FFB018D2832DD90006E196C /* StoryItem.swift */,
-				2FFB018E2832DD90006E196C /* SeriesItem.swift */,
-				2FFB018F2832DD90006E196C /* ResultUrl.swift */,
+				2FFB01922832DD90006E196C /* CharacterResult.swift */,
 				2FFB01902832DD90006E196C /* CharacterSeries.swift */,
 				2FFB01912832DD90006E196C /* CharacterStories.swift */,
-				2FFB01922832DD90006E196C /* CharacterResult.swift */,
 				2FFB01932832DD90006E196C /* ComicItem.swift */,
+				2FFB018B2832DD90006E196C /* EventItem.swift */,
+				2FFB018F2832DD90006E196C /* ResultUrl.swift */,
+				2FFB018E2832DD90006E196C /* SeriesItem.swift */,
+				2FFB018D2832DD90006E196C /* StoryItem.swift */,
+				2FFB01872832DD90006E196C /* Thumbnail.swift */,
 			);
 			path = Character;
+			sourceTree = "<group>";
+		};
+		2FFB01AE2832DF8B006E196C /* Character */ = {
+			isa = PBXGroup;
+			children = (
+				2FFB01AF2832DFA6006E196C /* CharacterListView+Observed.swift */,
+				2FFB01B12832DFB9006E196C /* CharacterListView.swift */,
+				2FFB01B32832E061006E196C /* CharacterListRow.swift */,
+				2FFB01B52832E1C4006E196C /* CharacterDetailView.swift */,
+			);
+			path = Character;
+			sourceTree = "<group>";
+		};
+		2FFB01BF283365E0006E196C /* CoreDataStack */ = {
+			isa = PBXGroup;
+			children = (
+				2FFB01542832DB3D006E196C /* Persistence.swift */,
+				2FFB01562832DB3D006E196C /* SuperSEAT.xcdatamodeld */,
+			);
+			path = CoreDataStack;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,6 +303,9 @@
 			dependencies = (
 			);
 			name = SuperSEAT;
+			packageProductDependencies = (
+				2FFB01C928337FFA006E196C /* Kingfisher */,
+			);
 			productName = SuperSEAT;
 			productReference = 2FFB01482832DB3C006E196C /* SuperSEAT.app */;
 			productType = "com.apple.product-type.application";
@@ -324,6 +378,9 @@
 				Base,
 			);
 			mainGroup = 2FFB013F2832DB3C006E196C;
+			packageReferences = (
+				2FFB01C828337FFA006E196C /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 2FFB01492832DB3C006E196C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -371,20 +428,28 @@
 				2FFB01A22832DD90006E196C /* SeriesItem.swift in Sources */,
 				2FFB014E2832DB3C006E196C /* ContentView.swift in Sources */,
 				2FFB01A02832DD90006E196C /* StoryItem.swift in Sources */,
+				2FFB01CC283383FB006E196C /* Credentials.swift in Sources */,
 				2FFB01A42832DD90006E196C /* ResultUrl.swift in Sources */,
 				2FFB01582832DB3D006E196C /* SuperSEAT.xcdatamodeld in Sources */,
 				2FFB01962832DD90006E196C /* CharacterComics.swift in Sources */,
 				2FFB01842832DD81006E196C /* String+MD5.swift in Sources */,
+				2FFB01B02832DFA6006E196C /* CharacterListView+Observed.swift in Sources */,
+				2FFB01B22832DFB9006E196C /* CharacterListView.swift in Sources */,
 				2FFB01AA2832DD90006E196C /* CharacterResult.swift in Sources */,
 				2FFB01A62832DD90006E196C /* CharacterSeries.swift in Sources */,
+				2FFB01B62832E1C4006E196C /* CharacterDetailView.swift in Sources */,
+				2FFB01BB2832F692006E196C /* InfiniteList.swift in Sources */,
 				2FFB01822832DD81006E196C /* URLSession+DataFromDelegate.swift in Sources */,
 				2FFB014C2832DB3C006E196C /* SuperSEATApp.swift in Sources */,
 				2FFB019A2832DD90006E196C /* Character.swift in Sources */,
 				2FFB01942832DD90006E196C /* Thumbnail.swift in Sources */,
+				2FFB01B42832E061006E196C /* CharacterListRow.swift in Sources */,
 				2FFB01982832DD90006E196C /* CharacterData.swift in Sources */,
 				2FFB01AC2832DD90006E196C /* ComicItem.swift in Sources */,
+				2FFB01CF28338699006E196C /* CharacterLoader.swift in Sources */,
 				2FFB01A82832DD90006E196C /* CharacterStories.swift in Sources */,
 				2FFB019E2832DD90006E196C /* CharacterEvent.swift in Sources */,
+				2FFB01B82832E2A7006E196C /* Constants and Enums.swift in Sources */,
 				2FFB019C2832DD90006E196C /* EventItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -396,16 +461,23 @@
 				2FFB01852832DD81006E196C /* String+MD5.swift in Sources */,
 				2FFB01622832DB3D006E196C /* SuperSEATTests.swift in Sources */,
 				2FFB019B2832DD90006E196C /* Character.swift in Sources */,
+				2FFB01BC2832F775006E196C /* InfiniteList.swift in Sources */,
 				2FFB01A32832DD90006E196C /* SeriesItem.swift in Sources */,
 				2FFB01AD2832DD90006E196C /* ComicItem.swift in Sources */,
 				2FFB01A72832DD90006E196C /* CharacterSeries.swift in Sources */,
 				2FFB01A52832DD90006E196C /* ResultUrl.swift in Sources */,
+				2FFB01D028338722006E196C /* CharacterLoader.swift in Sources */,
 				2FFB019D2832DD90006E196C /* EventItem.swift in Sources */,
+				2FFB01BE283365D6006E196C /* Persistence.swift in Sources */,
+				2FFB01C228336820006E196C /* SuperSEAT.xcdatamodeld in Sources */,
+				2FFB01D32833874B006E196C /* CharacterListView+Observed.swift in Sources */,
 				2FFB01A12832DD90006E196C /* StoryItem.swift in Sources */,
 				2FFB019F2832DD90006E196C /* CharacterEvent.swift in Sources */,
+				2FFB01D22833872A006E196C /* Credentials.swift in Sources */,
 				2FFB01952832DD90006E196C /* Thumbnail.swift in Sources */,
 				2FFB01972832DD90006E196C /* CharacterComics.swift in Sources */,
 				2FFB01AB2832DD90006E196C /* CharacterResult.swift in Sources */,
+				2FFB01D128338728006E196C /* Constants and Enums.swift in Sources */,
 				2FFB01A92832DD90006E196C /* CharacterStories.swift in Sources */,
 				2FFB01832832DD81006E196C /* URLSession+DataFromDelegate.swift in Sources */,
 				2FFB01992832DD90006E196C /* CharacterData.swift in Sources */,
@@ -562,6 +634,7 @@
 				DEVELOPMENT_TEAM = 3G54NEN3F6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SuperSEAT/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -592,6 +665,7 @@
 				DEVELOPMENT_TEAM = 3G54NEN3F6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SuperSEAT/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -727,6 +801,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2FFB01C828337FFA006E196C /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2FFB01C928337FFA006E196C /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2FFB01C828337FFA006E196C /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		2FFB01562832DB3D006E196C /* SuperSEAT.xcdatamodeld */ = {

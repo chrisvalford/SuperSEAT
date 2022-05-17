@@ -11,7 +11,7 @@ import Foundation
 
 @available(iOS, deprecated: 15.0, message: "iOS15+ nativly supported")
 extension URLSession {
-    func data(from url: URL) async throws -> (Data, URLResponse) {
+    public func data(from url: URL) async throws -> (Data, URLResponse) {
         try await withCheckedThrowingContinuation { continuation in
             let task = self.dataTask(with: url) { data, response, error in
                 guard let data = data, let response = response else {
